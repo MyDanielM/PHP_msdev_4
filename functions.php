@@ -3,7 +3,8 @@
 function output ($anyArr){
     //Функция вывода массива
     echo '<pre>';
-    echo var_dump($anyArr);
+    foreach ($anyArr as $item)
+        echo $item . " ";
     echo '</pre>';
 }
 
@@ -47,7 +48,7 @@ function getMatrixSumByFor($matrix){
     $dif = $sec2-$sec1;
     echo ("Закончили считать в ". $timeAfterFor);
     echo "</br>";
-    echo ("Прошло ".$dif." секунд");
+    echo ("<b>Прошло ".$dif." секунд</b>");
     echo "</br>";
 
     return $sum;
@@ -71,7 +72,7 @@ function getMatrixSumByForeach($matrix){
     $dif = $sec2-$sec1;
     echo ("Закончили считать в ". $timeAfterFor);
     echo "</br>";
-    echo ("Прошло ".$dif." секунд");
+    echo ("<b>Прошло ".$dif." секунд</b>");
     echo "</br>";
 
     return $sum;
