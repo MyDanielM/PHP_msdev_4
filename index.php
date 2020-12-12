@@ -12,6 +12,7 @@ for ($i=0;$i<count($arr)-1;$i++)
 {
     $newArr[$i+1]=$arr[$i];
 }
+echo "Полученный массив: ";
 output($newArr);
 
 
